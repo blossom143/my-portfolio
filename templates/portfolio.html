@@ -23,7 +23,7 @@
 
     <!-- About Section -->
     <section id="about" class="section fade-in">
-        <div class="section-title">About Me</div>
+        <h1 class="section-title">About Me</h1>
         <div class="about-content">
             <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile" class="profile-image">
             <div class="about-text">
@@ -39,7 +39,7 @@
 
     <!-- Education Section -->
     <section id="education" class="section fade-in">
-        <div class="section-title">Education</div>
+        <h1 class="section-title">Education</h1>
         <div class="timeline">
             {% for edu in data.education %}
             <div class="timeline-item">
@@ -53,7 +53,7 @@
 
     <!-- Experience Section -->
     <section id="experience" class="section fade-in">
-        <div class="section-title">Professional Experience</div>
+        <h1 class="section-title">Professional Experience</h1>
         <div class="timeline">
             {% for exp in data.experience %}
             <div class="timeline-item">
