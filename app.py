@@ -42,7 +42,7 @@ PORTFOLIO_DATA = {
             "title": "Senior DevOps Engineer",
             "company": "Khan Bank",
             "duration": "2022 - 2024",
-            "description": "Led cross-functional production teams to maintain 99.9% uptime for 300+ Java based microservices with over 2 million active users."
+            "description": "Automated configuration management and microservice Software Delivery Life Cycle across web applications,  iOS and Android mobile applications, by writing and configuring CI/CD pipelines, multiplying service build and deployment speeds by 50-90%."
         }  
     ],
     "projects": [

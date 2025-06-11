@@ -99,7 +99,7 @@ body {
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
-    padding-left: 80px;
+    padding-left: 60px;
     margin-bottom: 3rem;
     margin-top: 6rem;
     margin-right: 80px;
@@ -214,7 +214,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-    padding-left: 80px;
 }
 
 .project-card {
