@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Scientist Portfolio</title>
+    <title>Tsomorlig Khishigbold</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -31,8 +31,7 @@
                 <h2>{{ data.about.title }}</h2>
                 <p>{{ data.about.summary }}</p>
                 <div class="cv-links">
-                    <a href="#" class="cv-link">Download CV (English)</a>
-                    <a href="#" class="cv-link">Download CV (Other Language)</a>
+                    <a href="{{ url_for('static', filename='cv/Resume.pdf') }}" class="cv-link">Download CV</a>
                 </div>
             </div>
         </div>

@@ -7,35 +7,41 @@ CORS(app)
 # Sample portfolio data - replace with your actual information
 PORTFOLIO_DATA = {
     "about": {
-        "name": "Your Name",
-        "title": "Data Scientist",
-        "summary": "A passionate data scientist with expertise in machine learning, data analysis, and AI applications."
+        "name": "Tsomorlig Khishigbold",
+        "title": "MLOps Engineer",
+        "summary": "High-performing and self-driven MLOps Engineer with 5+ years of hands-on experience in the financial industry. Proven, demonstrable expertise in containerization, cloud computing, monitoring, automation, CI/CD pipelines and agile methodologies."
     },
     "education": [
         {
-            "degree": "Master of Science in Data Science",
-            "institution": "University of Example",
-            "year": "2022 - Present"
+            "degree": "MSc in Engineering Science (Data Science)",
+            "institution": "University at Buffalo",
+            "year": "2025 - Present"
         },
         {
-            "degree": "Bachelor of Science in Computer Science",
-            "institution": "Example University",
-            "year": "2018 - 2022"
+            "degree": "BE in Software Engineering",
+            "institution": "National University of Mongolia",
+            "year": "2016 - 2020"
         }
     ],
     "experience": [
         {
-            "title": "Data Scientist",
-            "company": "Tech Company Inc.",
-            "duration": "2023 - Present",
+            "title": "Cloud Administrator",
+            "company": "ESL FCU",
+            "duration": "2025 - Present",
             "description": "Leading data science projects and developing machine learning models"
         },
         {
-            "title": "Data Analyst Intern",
-            "company": "Data Co.",
-            "duration": "2022 - 2023",
-            "description": "Analyzed large datasets and provided insights for business decisions"
-        }
+            "title": "Manager",
+            "company": "Khan Bank",
+            "duration": "2024 - 2024",
+            "description": "Led cross-functional production teams to maintain 99.9% uptime for 300+ Java based microservices with over 2 million active users."
+        },
+        {
+            "title": "Senior DevOps Engineer",
+            "company": "Khan Bank",
+            "duration": "2022 - 2024",
+            "description": "Led cross-functional production teams to maintain 99.9% uptime for 300+ Java based microservices with over 2 million active users."
+        }  
     ],
     "projects": [
         {
@@ -72,35 +78,41 @@ CORS(app)
 # Sample portfolio data - replace with your actual information
 PORTFOLIO_DATA = {
     "about": {
-        "name": "Your Name",
-        "title": "Data Scientist",
-        "summary": "A passionate data scientist with expertise in machine learning, data analysis, and AI applications."
+        "name": "Tsomorlig Khishigbold",
+        "title": "MLOps Engineer",
+        "summary": "High-performing and self-driven MLOps Engineer with 5+ years of hands-on experience in the financial industry. Proven, demonstrable expertise in containerization, cloud computing, monitoring, automation, CI/CD pipelines and agile methodologies."
     },
     "education": [
         {
-            "degree": "Master of Science in Data Science",
-            "institution": "University of Example",
-            "year": "2022 - Present"
+            "degree": "MSc in Engineering Science (Data Science)",
+            "institution": "University at Buffalo",
+            "year": "2025 - Present"
         },
         {
-            "degree": "Bachelor of Science in Computer Science",
-            "institution": "Example University",
-            "year": "2018 - 2022"
+            "degree": "BE in Software Engineering",
+            "institution": "National University of Mongolia",
+            "year": "2016 - 2020"
         }
     ],
     "experience": [
         {
-            "title": "Data Scientist",
-            "company": "Tech Company Inc.",
-            "duration": "2023 - Present",
+            "title": "Cloud Administrator",
+            "company": "ESL FCU",
+            "duration": "2025 - Present",
             "description": "Leading data science projects and developing machine learning models"
         },
         {
-            "title": "Data Analyst Intern",
-            "company": "Data Co.",
-            "duration": "2022 - 2023",
-            "description": "Analyzed large datasets and provided insights for business decisions"
-        }
+            "title": "Manager",
+            "company": "Khan Bank",
+            "duration": "2024 - 2024",
+            "description": "Led cross-functional production teams to maintain 99.9% uptime for 300+ Java based microservices with over 2 million active users."
+        },
+        {
+            "title": "Senior DevOps Engineer",
+            "company": "Khan Bank",
+            "duration": "2022 - 2024",
+            "description": "Led cross-functional production teams to maintain 99.9% uptime for 300+ Java based microservices with over 2 million active users."
+        }  
     ],
     "projects": [
         {
