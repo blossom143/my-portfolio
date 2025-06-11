@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Grabber</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQih8dPU1GKg5s_1TLgXYoQxc_IEpCjtE"></script>
+</head>
+<body>
+    <h1>Get My Location</h1>
+    <button onclick="getLocation()">Send My Location to Flask</button>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(sendPosition, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function sendPosition(position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+
+            fetch('/location', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ latitude: lat, longitude: lng })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(`Location sent! Latitude: ${data.latitude}, Longitude: ${data.longitude}`);
+            });
+        }
+
+        function showError(error) {
+            alert("Error getting location: " + error.message);
+        }
+    </script>
+</body>
+</html>

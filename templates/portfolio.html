@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+        <div class="section-title">About Me</div>
+        <div class="about-content">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile" class="profile-image">
+            <div class="about-text">
+                <h1>{{ data.about.name }}</h1>
+                <h2>{{ data.about.title }}</h2>
+                <p>{{ data.about.summary }}</p>
+                <div class="cv-links">
+                    <a href="#" class="cv-link">Download CV (English)</a>
+                    <a href="#" class="cv-link">Download CV (Other Language)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section fade-in">
+        <div class="section-title">Education</div>
+        <div class="timeline">
+            {% for edu in data.education %}
+            <div class="timeline-item">
+                <div class="timeline-date">{{ edu.year }}</div>
+                <div class="timeline-title">{{ edu.degree }}</div>
+                <p>{{ edu.institution }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section fade-in">
+        <div class="section-title">Professional Experience</div>
+        <div class="timeline">
+            {% for exp in data.experience %}
+            <div class="timeline-item">
+                <div class="timeline-date">{{ exp.duration }}</div>
+                <div class="timeline-title">{{ exp.title }}</div>
+                <p>{{ exp.company }}</p>
+                <p class="description">{{ exp.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section fade-in">
+        <div class="section-title">Research & Projects</div>
+        <div class="project-grid">
+            {% for project in data.projects %}
+            <div class="project-card">
+                <div class="project-title">{{ project.title }}</div>
+                <p>{{ project.description }}</p>
+                <div class="technologies">
+                    {% for tech in project.technologies %}
+                    <span class="technology-tag">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section fade-in">
+        <div class="section-title">Skills & Certifications</div>
+        <div class="skills-grid">
+            {% for skill in data.skills %}
+            <div class="skill-item">{{ skill }}</div>
+            {% endfor %}
+        </div>
+        <div class="certifications">
+            <h3>Certifications</h3>
+            <ul>
+                {% for cert in data.certifications %}
+                <li>{{ cert }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+        <div class="section-title">Contact Me</div>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" class="form-input" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form-input" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" class="form-input" placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
